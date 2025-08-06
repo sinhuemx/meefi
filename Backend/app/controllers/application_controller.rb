@@ -3,6 +3,10 @@ class ApplicationController < ActionController::API
   rescue_from ActiveRecord::RecordNotFound, with: :handle_not_found
   rescue_from ActiveRecord::RecordInvalid, with: :handle_validation_error
   
+  def status
+    render json: { status: "ok" }
+  end
+  
   private
   
   def handle_standard_error(exception)

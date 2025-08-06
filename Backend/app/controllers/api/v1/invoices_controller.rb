@@ -18,8 +18,8 @@ module Api
             status: invoice.status_badge,
             payment_complement_generated: invoice.payment_complement_generated?,
             facturama_id: invoice.facturama_id,
-            pdf_url: invoice.pdf_url,
-            xml_url: invoice.xml_url
+            pdf_url: download_pdf_api_v1_invoice_url(invoice),
+            xml_url: download_xml_api_v1_invoice_url(invoice)
           }
         end
         
@@ -38,8 +38,8 @@ module Api
           status: @invoice.status_badge,
           payment_complement_generated: @invoice.payment_complement_generated?,
           facturama_id: @invoice.facturama_id,
-          pdf_url: @invoice.pdf_url,
-          xml_url: @invoice.xml_url
+          pdf_url: download_pdf_api_v1_invoice_url(@invoice),
+          xml_url: download_xml_api_v1_invoice_url(@invoice)
         }
       end
       
