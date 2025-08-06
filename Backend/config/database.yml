@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: xenon_invoices_development
+  username: postgres
+  password: MEEFI
+  host: localhost
+  port: 5432
+
+test:
+  <<: *default
+  database: xenon_invoices_test
+  username: postgres
+  password: MEEFI
+  host: localhost
+  port: 5432
+
+production:
+  <<: *default
+  url: <%= ENV.fetch('DATABASE_URL') %>

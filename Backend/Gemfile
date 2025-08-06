@@ -1,0 +1,30 @@
+source "https://rubygems.org"
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+ruby "3.2.2"
+
+gem "rails", "~> 7.2.0"
+gem "pg", "~> 1.1"
+gem "puma", "~> 6.0"
+gem "bootsnap", "~> 1.18.0", require: false
+gem 'rack-cors'
+
+# Background jobs
+gem "sidekiq", "~> 7.0"
+
+# HTTP client for Facturama API
+gem "httparty", "~> 0.22.0"
+
+# XML parsing
+gem "nokogiri", "~> 1.16"
+
+# Environment variables
+gem "dotenv-rails", "~> 3.0"
+
+group :development, :test do
+  gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem "rspec-rails", "~> 7.0"
+  gem "factory_bot_rails", "~> 6.5"
+end
+
+

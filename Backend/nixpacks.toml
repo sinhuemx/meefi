@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ['ruby_3_2']
+
+[phases.install]
+cmds = ['bundle install']
+
+[phases.build]
+cmds = ['echo "Skipping build phase for API-only app"']
+
+[start]
+cmd = 'bundle exec rails db:migrate && bundle exec rails server -b 0.0.0.0 -p $PORT'

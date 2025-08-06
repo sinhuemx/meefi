@@ -1,0 +1,19 @@
+current directory: /Users/carlossinhuegarciahernandez/Documents/sinhue/MX/projects/meefi/challenge-sinhuemx/Backend/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+/Users/carlossinhuegarciahernandez/.rbenv/versions/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/carlossinhuegarciahernandez/Documents/sinhue/MX/projects/meefi/challenge-sinhuemx/Backend/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250804-35981-zrfni sitelibdir\=./.gem.20250804-35981-zrfni clean
+
+current directory: /Users/carlossinhuegarciahernandez/Documents/sinhue/MX/projects/meefi/challenge-sinhuemx/Backend/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250804-35981-zrfni sitelibdir\=./.gem.20250804-35981-zrfni
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/carlossinhuegarciahernandez/Documents/sinhue/MX/projects/meefi/challenge-sinhuemx/Backend/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250804-35981-zrfni sitelibdir\=./.gem.20250804-35981-zrfni install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20250804-35981-zrfni
+
+current directory: /Users/carlossinhuegarciahernandez/Documents/sinhue/MX/projects/meefi/challenge-sinhuemx/Backend/vendor/bundle/ruby/3.2.0/gems/websocket-driver-0.8.0/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250804-35981-zrfni sitelibdir\=./.gem.20250804-35981-zrfni clean

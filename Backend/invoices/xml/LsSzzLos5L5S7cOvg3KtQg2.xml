@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" 
+                  xmlns:pago20="http://www.sat.gob.mx/Pagos20"
+                  Version="4.0" 
+                  TipoDeComprobante="P"
+                  Folio="DEMO"
+                  Fecha="2025-08-05T09:15:51Z"
+                  LugarExpedicion="76343">
+  <cfdi:Emisor Rfc="XIA190128J61" Nombre="XENON INDUSTRIAL ARTICLES" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="DEMO RECEPTOR" UsoCFDI="CP01" DomicilioFiscalReceptor="76343" RegimenFiscalReceptor="601"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="84111506" Cantidad="1" ClaveUnidad="ACT" Descripcion="Pago" ValorUnitario="0" Importe="0" ObjetoImp="01"/>
+  </cfdi:Conceptos>
+  <cfdi:Complemento>
+    <pago20:Pagos Version="2.0">
+      <pago20:Totales/>
+      <pago20:Pago FechaPago="2025-08-05T09:15:51Z" FormaDePagoP="03" MonedaP="MXN" Monto="1000.00">
+        <pago20:DoctoRelacionado IdDocumento="LsSzzLos5L5S7cOvg3KtQg2" MonedaDR="MXN" NumParcialidad="1" ImpSaldoAnt="1000.00" ImpPagado="1000.00" ImpSaldoInsoluto="0.00" ObjetoImpDR="02"/>
+      </pago20:Pago>
+    </pago20:Pagos>
+  </cfdi:Complemento>
+  <cfdi:Addenda>
+    <demo>Este es un archivo de demostración generado porque el complemento no está disponible en Facturama Sandbox</demo>
+  </cfdi:Addenda>
+</cfdi:Comprobante>
